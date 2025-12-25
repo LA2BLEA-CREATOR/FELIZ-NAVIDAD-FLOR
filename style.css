@@ -1,0 +1,73 @@
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to bottom, #0f5d2f, #022c14);
+    color: white;
+    overflow-x: hidden;
+}
+
+/* CONTENEDOR */
+.container {
+    text-align: center;
+    padding: 40px;
+}
+
+h1 {
+    color: #ffdf00;
+    text-shadow: 0 0 12px red;
+}
+
+.mensaje {
+    font-size: 20px;
+    margin-bottom: 35px;
+}
+
+/* GALERÍA */
+.galeria {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+/* FOTOS GRANDES Y SIN CORTAR CARAS */
+.galeria img {
+    width: 260px;
+    height: 320px;
+    object-fit: contain; 
+    background: black;
+    border-radius: 20px;
+    border: 4px solid white;
+    padding: 5px;
+    transition: transform 0.4s, box-shadow 0.4s;
+}
+
+.galeria img:hover {
+    transform: scale(1.08);
+    box-shadow: 0 0 25px gold;
+}
+
+/* BOTÓN */
+button {
+    margin-top: 35px;
+    padding: 16px 36px;
+    font-size: 20px;
+    border: none;
+    border-radius: 40px;
+    background: red;
+    color: white;
+    cursor: pointer;
+    box-shadow: 0 0 15px red;
+}
+
+button:hover {
+    background: gold;
+    color: black;
+}
+
+/* MENSAJE FINAL */
+#sorpresa {
+    margin-top: 30px;
+    font-size: 22px;
+    color: #ffdf00;
+}
